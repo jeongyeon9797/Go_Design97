@@ -23,7 +23,12 @@ a:hover {
 /*
  * Base structure
  */
+.emoge h1 p {
+  display: inline-block;
+  text-align: center;
+}
 
+}
 html,
 body {
   height: 100%;
@@ -37,6 +42,110 @@ body {
   text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
   box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
 }
+.balloons {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+} 
+
+.balloon_01  {
+ float: left;
+ position:relative;
+ margin: 50px;
+ width:100px;
+ vertical-align: middle;
+ color: black;
+ line-height:50px;
+ height:50px;
+  background: white;
+  border-radius: 10px;
+}
+.balloon_01 : after {
+ border-top:0px solid transparent; 
+ border-left: 10px solid transparent; 
+ border-right: 10px solid transparent; 
+ border-bottom: 10px solid pink; 
+ content:""; 
+ position:absolute;
+ top:-10px;
+ left:200px;  
+}
+.balloon {  
+ position:relative; 
+ margin: 50px;
+ width:400px; 
+ height:50px;
+  background:pink; 
+  border-radius: 10px;
+}
+.balloon:after { 
+ border-top:0px solid transparent; 
+ border-left: 10px solid transparent; 
+ border-right: 10px solid transparent; 
+ border-bottom: 10px solid pink; 
+ content:""; 
+ position:absolute;
+ top:-10px;
+ left:200px;  
+}
+ 
+
+.balloon_02  {
+  float: left;
+  background: white;
+  color: black;
+   vertical-align: middle;
+ line-height:50px;
+ height:50px;
+ position:relative;
+ margin: 50px;
+ width:100px;
+ height:50px;
+  
+  border-radius: 10px;
+}
+.balloon_02 :after {
+ border-top:0px solid transparent;
+ border-left: 10px solid transparent;
+ border-right: 10px solid transparent;
+ border-bottom: 10px solid blue;
+ content:"";
+ position:absolute;
+ top:-10px;
+ left:200px;
+}
+
+
+.balloon_03 {
+ float: left;
+ color: black;
+ background: white;
+ float: left;
+ vertical-align: middle;
+ line-height:50px;
+ height:50px;
+ position:relative;
+ margin: 50px;
+ width:100px;
+ height:50px;
+ border-radius: 10px;
+}
+
+.balloon_03 :after {
+  color: black;
+ background: white;
+ border-top:15px solid #333333;
+ border-left: 15px solid transparent;
+ border-right: 0px solid transparent;
+ border-bottom: 0px solid transparent;
+ content:"";
+ position:absolute;
+ top:10px;
+ left:-15px;
+}
+ 
+ 
+
 
 .cover-container {
   max-width: 42em;
