@@ -1,4 +1,5 @@
-# Go_Design97/*
+# Go_Design97
+/*
  * Globals
  */
 
