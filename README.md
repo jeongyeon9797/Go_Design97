@@ -20,20 +20,37 @@ a:hover {
   border: .05rem solid #fff;
 }
 
-
+.float-md-start {
+  text-shadow: 6px 6px 18px black
+}
 /*
  * Base structure
  */
-.emoge h1 p {
+body {
+  width: 100%;
+  height: 100%;
+  background-size: 75%;
+  background-repeat: repeat-x;
+  background-position: center center;
+  text-align: right;
+ background-image: url('image/Design 5.png');
+ 
+}
+.info {
   display: inline-block;
-  text-align: center;
+  text-align: right;
+  width: 300px;
+  float: left;
 }
 
 }
 html,
 body {
+ width: 100%;
   height: 100%;
-  background-color: #333;
+  background-size: cover;
+ background-image: url('image/Design 5.png');
+
 }
 
 body {
