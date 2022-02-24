@@ -32,7 +32,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
- background-image: url('image/Design 5.png');
+  background-image: url('image/Design 5.png');
  
 }
 .info {
