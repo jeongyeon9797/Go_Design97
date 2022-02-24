@@ -1,232 +1,76 @@
-/*
- * Globals
- */
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>Cover Template · Bootstrap v5.1</title>
 
-/* Links */
-a,
-a:focus,
-a:hover {
-  color: #fff;
-}
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/cover/">
 
-/* Custom default button */
-.btn-secondary,
-.btn-secondary:hover,
-.btn-secondary:focus {
-  color: #333;
-  text-shadow: none; /* Prevent inheritance from `body` */
-  background-color: #fff;
-  border: .05rem solid #fff;
-}
+    
 
-.float-md-start {
-  text-shadow: 6px 6px 18px black
-}
-/*
- * Base structure
- */
-body {
-  width: 100%;
-  height: 100%;
-  background-size: 75%;
-  background-repeat: repeat-x;
-  background-position: center center;
-  text-align: right;
- background-image: url('image/Design 5.png');
- 
-}
-.info {
-  display: inline-block;
-  text-align: right;
-  width: 300px;
-  float: left;
-}
-
-}
-html,
-body {
- width: 100%;
-  height: 100%;
-  background-size: cover;
- background-image: url('image/Design 5.png');
-
-}
-
-body {
-  display: -ms-flexbox;
-  display: flex;
-  color: #fff;
-  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
-  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
-}
-.balloons {
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
-} 
-
-.balloon_01  {
- float: left;
- position:relative;
- margin: 50px;
- width:100px;
- vertical-align: middle;
- color: black;
- line-height:50px;
- height:50px;
-  background: white;
-  border-radius: 10px;
-}
-.balloon_01 : after {
- border-top:0px solid transparent; 
- border-left: 10px solid transparent; 
- border-right: 10px solid transparent; 
- border-bottom: 10px solid pink; 
- content:""; 
- position:absolute;
- top:-10px;
- left:200px;  
-}
-.balloon {  
- position:relative; 
- margin: 50px;
- width:400px; 
- height:50px;
-  background:pink; 
-  border-radius: 10px;
-}
-.balloon:after { 
- border-top:0px solid transparent; 
- border-left: 10px solid transparent; 
- border-right: 10px solid transparent; 
- border-bottom: 10px solid pink; 
- content:""; 
- position:absolute;
- top:-10px;
- left:200px;  
-}
- 
-
-.balloon_02  {
-  float: left;
-  background: white;
-  color: black;
-   vertical-align: middle;
- line-height:50px;
- height:50px;
- position:relative;
- margin: 50px;
- width:100px;
- height:50px;
-  
-  border-radius: 10px;
-}
-.balloon_02 :after {
- border-top:0px solid transparent;
- border-left: 10px solid transparent;
- border-right: 10px solid transparent;
- border-bottom: 10px solid blue;
- content:"";
- position:absolute;
- top:-10px;
- left:200px;
-}
+    <!-- Bootstrap core CSS -->
 
 
-.balloon_03 {
- float: left;
- color: black;
- background: white;
- float: left;
- vertical-align: middle;
- line-height:50px;
- height:50px;
- position:relative;
- margin: 50px;
- width:100px;
- height:50px;
- border-radius: 10px;
-}
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
 
-.balloon_03 :after {
-  color: black;
- background: white;
- border-top:15px solid #333333;
- border-left: 15px solid transparent;
- border-right: 0px solid transparent;
- border-bottom: 0px solid transparent;
- content:"";
- position:absolute;
- top:10px;
- left:-15px;
-}
- 
- 
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
 
+    
+    <!-- Custom styles for this template -->
+    <link href="cover.css" rel="stylesheet">
+  </head>
+  <body class="d-flex h-100 text-center text-white bg-dark">
+    
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+  <header class="mb-auto">
+    <div>
+      <h3 class="float-md-start mb-0">Welcome to my workplace</h3>
+      <!-- <nav class="nav nav-masthead justify-content-center float-md-end">
+        <a class="nav-link active" aria-current="page" href="#">Home</a>
+        <a class="nav-link" href="#">About me</a>
+        <a class="nav-link" href="#">Contact</a>
+      </nav> -->
+    </div>
+  </header>
 
-.cover-container {
-  max-width: 42em;
-}
+  <main class="px-3">  
+     <div class ="balloon_01">ABOUT ME</div>
+     <div class ="balloon_02" href = "#">SKILL</div>
+     <div class ="balloon_03" href = "#">CONTACT</div>
+      </div>
+      
+    
 
+    <p class="lead"></p>
+    <p class="lead">
+      <!-- <div a href="#" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Contact<div></a>
+    </p>
+  </main> -->
 
-/*
- * Header
- */
-.masthead {
-  margin-bottom: 2rem;
-}
-
-.masthead-brand {
-  margin-bottom: 0;
-}
-
-.nav-masthead .nav-link {
-  padding: .25rem 0;
-  font-weight: 700;
-  color: rgba(255, 255, 255, .5);
-  background-color: transparent;
-  border-bottom: .25rem solid transparent;
-}
-
-.nav-masthead .nav-link:hover,
-.nav-masthead .nav-link:focus {
-  border-bottom-color: rgba(255, 255, 255, .25);
-}
-
-.nav-masthead .nav-link + .nav-link {
-  margin-left: 1rem;
-}
-
-.nav-masthead .active {
-  color: #fff;
-  border-bottom-color: #fff;
-}
-
-@media (min-width: 48em) {
-  .masthead-brand {
-    float: left;
-  }
-  .nav-masthead {
-    float: right;
-  }
-}
+  <footer class="mt-auto text-white-50">
+    <!-- <p>Cover template for <a href="https://getbootstrap.com/" class="text-white">Bootstrap</a>, by <a href="https://twitter.com/mdo" class="text-white">@mdo</a>.</p> -->
+  </footer>
+</div>
 
 
-/*
- * Cover
- */
-.cover {
-  padding: 0 1.5rem;
-}
-.cover .btn-lg {
-  padding: .75rem 1.25rem;
-  font-weight: 700;
-}
-
-
-/*
- * Footer
- */
-.mastfoot {
-  color: rgba(255, 255, 255, .5);
-}
+    
+  </body>
+</html>
