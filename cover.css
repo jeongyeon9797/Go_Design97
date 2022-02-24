@@ -20,152 +20,43 @@ a:hover {
   border: .05rem solid #fff;
 }
 
-.float-md-start {
-  text-shadow: 1px 2px 20px black
-}
 /*
  * Base structure
  */
-body {
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-image: url('image/Design 5.png');
- 
-}
-.info {
-  display: inline-block;
-  text-align: right;
-  width: 300px;
-  float: left;
-}
+.bg {
+  background-color:rgba(0, 0, 0, 0.5); /*살짝 투명한 검정으로 배경색*/ 
+  width:100%; 
+  height:100%; 
+  position: absolute; /*다른 요소들 위로 겹쳐질 수 있게함*/ 
+  top:0px; } 
 
-}
-html,
-body {
- width: 100%;
-  height: 100%;
-  background-size: cover;
- background-image: url('image/Design 5.png');
+.overlay{ 
+  background-image: url('image/Design 5.png'); 
+  background-size:cover; 
+  display:block; 
+  width:100%; 
+  height:100%; 
+  color: #ffffff; 
+  text-align: center; 
+  padding-top:150px;
+   } 
 
-}
+.overlay h1 { 
+  text-shadow: 2px 3px 30px black;
+  font-size: 46px;
+  font-weight: bold;
+  margin-bottom: 30px; 
 
-body {
-  display: -ms-flexbox;
-  display: flex;
-  color: #fff;
-  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
-  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
-}
-.balloons {
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
 } 
-
-.balloon_01  {
- float: left;
- position:relative;
- margin: 50px;
- width:100px;
- vertical-align: middle;
- color: black;
- line-height:50px;
- height:50px;
-  background: white;
-  border-radius: 10px;
-}
-.balloon_01 : after {
- border-top:0px solid transparent; 
- border-left: 10px solid transparent; 
- border-right: 10px solid transparent; 
- border-bottom: 10px solid pink; 
- content:""; 
- position:absolute;
- top:-10px;
- left:200px;  
-}
-.balloon {  
- position:relative; 
- margin: 50px;
- width:400px; 
- height:50px;
-  background:pink; 
-  border-radius: 10px;
-}
-.balloon:after { 
- border-top:0px solid transparent; 
- border-left: 10px solid transparent; 
- border-right: 10px solid transparent; 
- border-bottom: 10px solid pink; 
- content:""; 
- position:absolute;
- top:-10px;
- left:200px;  
-}
- 
-
-.balloon_02  {
-  float: left;
-  background: white;
-  color: black;
-   vertical-align: middle;
- line-height:50px;
- height:50px;
- position:relative;
- margin: 50px;
- width:100px;
- height:50px;
-  
-  border-radius: 10px;
-}
-.balloon_02 :after {
- border-top:0px solid transparent;
- border-left: 10px solid transparent;
- border-right: 10px solid transparent;
- border-bottom: 10px solid blue;
- content:"";
- position:absolute;
- top:-10px;
- left:200px;
-}
-
-
-.balloon_03 {
- float: left;
- color: black;
- background: white;
- float: left;
- vertical-align: middle;
- line-height:50px;
- height:50px;
- position:relative;
- margin: 50px;
- width:100px;
- height:50px;
- border-radius: 10px;
-}
-
-.balloon_03 :after {
-  color: black;
- background: white;
- border-top:15px solid #333333;
- border-left: 15px solid transparent;
- border-right: 0px solid transparent;
- border-bottom: 0px solid transparent;
- content:"";
- position:absolute;
- top:10px;
- left:-15px;
-}
- 
- 
-
-
-.cover-container {
-  max-width: 42em;
+.overlay p { 
+  text-shadow: 2px 2px 20px black;
+  font-size: 20px;
+} 
+.overlay h1,p,a {
+  padding-right: 680px;
+  text-align: right; 
+  position: relative; 
+  z-index:1000; /*맨 앞으로 나오도록 함*/ 
 }
 
 
@@ -215,13 +106,7 @@ body {
 /*
  * Cover
  */
-.cover {
-  padding: 0 1.5rem;
-}
-.cover .btn-lg {
-  padding: .75rem 1.25rem;
-  font-weight: 700;
-}
+
 
 
 /*
