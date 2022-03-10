@@ -1,14 +1,7 @@
-# Go_Design97
 /*
  * Globals
  */
 
-/* Links */
-a,
-a:focus,
-a:hover {
-  color: #fff;
-}
 
 /* Custom default button */
 .btn-secondary,
@@ -16,64 +9,85 @@ a:hover {
 .btn-secondary:focus {
   color: #333;
   text-shadow: none; /* Prevent inheritance from `body` */
-  background-color: #fff;
-  border: .05rem solid #fff;
 }
+
 
 /*
  * Base structure
  */
-.bg {
-  background-color:rgba(0, 0, 0, 0.5); /*살짝 투명한 검정으로 배경색*/ 
-  width:100%; 
-  height:100%; 
-  position: absolute; /*다른 요소들 위로 겹쳐질 수 있게함*/ 
-  top:0px; } 
+ 
+ html{overflow: scroll;}
+ 
+html, body{width: 100%; height: 100%;}
 
-.overlay{ 
-  background-image: url('image/Design 5.png'); 
-  background-size:cover; 
-  display:block; 
-  width:100%; 
-  height:100%; 
-  color: #ffffff; 
-  text-align: center; 
-  padding-top:150px;
-   } 
+.content {
+  width: 100%; height: 100%;
+  
+  position: relative;
+}
 
-.overlay h1 { 
-  text-shadow: 2px 3px 30px black;
-  font-size: 46px;
-  font-weight: bold;
-  margin-bottom: 30px; 
+ .px-3 {
+  width: 100%; height: 100%;
+  background-image: url('image/Desktop - 1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+}
 
-} 
-.overlay p { 
+
+
+.content h2 {
+  width: 100%; height: 100%;
+  text-align: center;
   text-shadow: 2px 2px 20px black;
-  font-size: 20px;
-} 
-.overlay h1,p,a {
-  padding-right: 680px;
-  text-align: right; 
-  position: relative; 
-  z-index:1000; /*맨 앞으로 나오도록 함*/ 
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: white;
+
+}
+
+.content .btns {
+  margin-top: 120px;
+  display: inline-block;
+ margin-left: auto;
+ margin-right: auto;
+ width: 100%;
+
+}
+
+.px-3 a {
+  display: inline-block;
+  margin: 20px;
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  text-shadow: 2px 2px 20px black;
+  width: 100px;
+  margin-bottom: 20px;
+
+}
+
+.btn1 .btn2 .btn3 a {
+   text-shadow: 2PX 2PX 20PX BLACK;
+
+}
+.chapter2 {
+background-color: white;
+width: 100%;
+height: 100px;
 }
 
 
 /*
  * Header
  */
-.masthead {
-  margin-bottom: 2rem;
-}
-
-.masthead-brand {
-  margin-bottom: 0;
-}
 
 .nav-masthead .nav-link {
   padding: .25rem 0;
-  font-weight: 700;
+  font-weight: 100;
   color: rgba(255, 255, 255, .5);
   background-color: transparent;
   border-bottom: .25rem solid transparent;
@@ -93,25 +107,135 @@ a:hover {
   border-bottom-color: #fff;
 }
 
-@media (min-width: 48em) {
-  .masthead-brand {
-    float: left;
+
+.row {
+  text-align: center;
+  margin-top: 120px;
+  margin-left: 20px;
+  margin-right: 20px;
+  display: inline-block;
+}
+
+.row h4 {
+width: 140px; 
+margin-top: 20px;
+text-align: center;
+margin-bottom: 50px;
+
+}
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 3rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+
+  /* rtl:remove */
+  letter-spacing: -.05rem;
+ 
+  float: left;
+}
+
+.featurette-heading h1 {
+  font-weight: bold;
+   font-size: 80px;
+}
+
+.featurette-heading h1 b {
+  color: #009fe3;
+}
+
+.row-featurette {
+  margin-left: 50px;
+  margin-right: 50px;
+  float: left;
+  text-align: left;
+}
+.featurette-image1 img{
+
+ text-align: right;
+ float: right;
+}
+
+.clearfix {
+  clear: both;
+}
+
+ @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+  .text-muted {
+    font-family: 'Noto Sans KR', sans-serif;
+    }
+
+ .text-muted {
+  
+  margin-top: 50px;
+  font-size: 20px;
+}
+
+.lead  {
+  text-align: left;
+   
+    margin-top: 70px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    font-size: 25px;
+
+}
+.row-featurette {
+float: left;
+}
+.lead {
+  margin-bottom: 25px;
+  margin-top: 50px;
+  font-size: 19px;
+  line-height: 37px;
+}
+.menu {
+ margin-top: -15px;
+ margin-bottom: 10px;
+}
+.menu img {
+  margin-left: 7px;
+}
+Resources
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 30em) {
+  /* Bump up size of carousel content */
+  .carousel-caption  {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
   }
-  .nav-masthead {
-    float: right;
-  }
+  .featurette-heading h1 {
+   font-size: 50px;
 }
 
 
-/*
- * Cover
- */
 
 
 
-/*
- * Footer
- */
-.mastfoot {
-  color: rgba(255, 255, 255, .5);
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+   .text-muted{
+  margin-top: 20px;
+  font-size: 20px;
 }
+
+  .lead  p {
+      margin-bottom: 1rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+  .featurette-heading h1 {
+    font-size: 80px;
+  }
